@@ -1,39 +1,3 @@
-// Queue.hpp
-//
-// ICS 46 Spring 2018
-// Project #2: Time Waits for No One
-//
-// This is the complete implementation of a Queue<ValueType> class template,
-// which implements a queue of objects.  It may seem a little bit odd that
-// there's so little code, but it's because the class inherits all of its
-// implementation details from the DoublyLinkedList<ValueType> class
-// template that you'll be building.  Effectively, a queue is really just
-// a more limited version of a linear data structure like an array or a
-// linked list -- it's *some* things that an array or linked list is,
-// but not everything.  The way we express a relationship like that in C++
-// is to use private inheritance (i.e., inheritance that our Queue class
-// template is aware of, but that no code elsewhere in the program is
-// permitted to use).  Our implementation, then, is a set of member
-// functions that call into DoublyLinkedList member functions, along with
-// some "using" declarations that take some things that are declared in
-// DoublyLinkedList and make them public members of Queue.
-//
-// While you can add things to this class if you'd like, DO NOT MODIFY THE
-// PROVIDED CODE IN ANY WAY otherwise.  We will be running unit tests
-// against this class template -- mainly as a way of validating that your
-// DoublyLinkedList<ValueType> makes the correct assumptions -- and these
-// will neither compile nor run if the public member functions below have
-// changed in any way.  As we did in Project #0, we've provide you a
-// basic set of unit tests that briefly demonstrate how each of the member
-// functions is required to behave; you'll find those in the "gtest"
-// directory.
-//
-// The entire C++ Standard Library is off-limits in your implementation
-// of this class.  DO NOT submit a version of this file (or any file
-// that it includes) that includes any C++ Standard Library headers.
-// (This includes things like adding a print() member function that
-// requires <iostream>.)
-
 #ifndef QUEUE_HPP
 #define QUEUE_HPP
 
